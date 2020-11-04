@@ -3,7 +3,7 @@ package mastermind;
 import java.util.Random;
 
 public class Combination {
-	protected static final int COMBINATION_LENGTH = 4;
+	protected final int COMBINATION_LENGTH = 4;
 	protected final String VALID_COLORS = "rbygop";
 	
 	protected String colors;
