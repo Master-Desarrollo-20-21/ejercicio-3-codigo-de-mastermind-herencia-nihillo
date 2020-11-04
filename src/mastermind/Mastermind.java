@@ -1,3 +1,5 @@
+package mastermind;
+
 public class Mastermind { 
 
   private Game game; 
@@ -16,13 +18,13 @@ public class Mastermind {
     String answer; 
     Console console = new Console(); 
     do { 
-      answer = console.readString("¿Quieres continuar? (s/n): "); 
-    } while (!answer.equals("s") && !answer.equals("n")); 
-    return answer.equals("s"); 
+      answer = console.readString("\nCONTINUE? (y/n): "); 
+    } while (!answer.equals("y") && !answer.equals("n")); 
+    return answer.equals("y"); 
   } 
 
   public static void main(String[] args) { 
-    new Mastermind().play(); 
+    new Mastermind().play();
   } 
 
 }
